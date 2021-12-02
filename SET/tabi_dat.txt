@@ -1,0 +1,21 @@
+data;
+
+set TABLETTAK:=
+	Spenotos
+	Epres
+	Kiwis
+	;
+	
+param ar:=
+	Spenotos 2000
+	Epres 1500
+	Kiwis 1000
+	;
+	
+param hatasfok:=
+	Spenotos 10
+	Epres 7
+	Kiwis 10
+	;
+	
+param adagolas_limit := 8;

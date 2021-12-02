@@ -1,0 +1,10 @@
+var T1 >= 0, integer;
+var T2 >= 0, integer;
+
+s.t. Gep_1: 3*T1 + 4*T2 <= 130;
+s.t. Gep_2: 4*T1 + 6*T2 <= 200;
+s.t. Munkas: 1*T1 + 2*T2 = 60;
+
+maximize bevetel: 8*T1 + 10*T2;
+
+end;

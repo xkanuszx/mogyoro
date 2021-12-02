@@ -1,0 +1,23 @@
+var x21 >= 0, integer;
+var x7 >= 0, integer;
+var x5 >= 0, integer;
+var x1 >= 0, integer;
+var x42 >= 0, integer;
+
+s.t. osszeg: 21*x21 + 7*x7 + 5*x5 + x1 + 42*x42 = 1234;
+minimize darabszam: x21 + x7 + x5 + x1 + x42;
+
+solve;
+
+printf "Hello world!\n\n" ;
+printf "A darabszám: %d \n", darabszam;
+printf "21-bõl ennyi: %d \n", x21;
+printf "7-bõl ennyi: %d \n", x7;
+printf "5-bõl ennyi: %d \n", x5;
+printf "1-bõl ennyi: %d \n", x1;
+printf "42-bõl ennyi: %d \n", x42;
+
+printf "És akkor egybe: %d %d %d %d %d\n", x21, x7, x5, x1, x42;
+
+
+end;

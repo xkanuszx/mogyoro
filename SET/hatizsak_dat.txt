@@ -1,0 +1,15 @@
+data;
+
+set Eszkozok := ko papir ollo;
+
+param Suly := 	ko 4
+		papir 5
+		ollo 3;
+
+param Ertek := 	ko 10
+		papir 15
+		ollo 6;
+			   
+param MaxSuly := 10;
+
+end;

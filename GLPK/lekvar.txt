@@ -1,0 +1,9 @@
+var lekvar >= 0, integer;
+var befott >= 0, integer;
+
+s.t. gyumi: 80*lekvar + 40*befott <= 12000;
+s.t. cukor: 40*lekvar + 40*befott <= 8000;
+
+maximize bevetel: 100*lekvar + 80*befott;
+
+end;

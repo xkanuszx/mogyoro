@@ -1,0 +1,10 @@
+var T1 >= 0, integer;
+var T2 >= 0, integer;
+
+s.t. gep_1: (1*1 + 2*1)*T1 + (1*0 + 1*1)*T2 <= 240;
+s.t. gep_2: (1*7 + 2*1)*T1 + (1*1 + 1*1)*T2 <= 630;
+s.t. szerelde: 2*T1 + 1*T2 <= 220;
+
+maximize bevetel: 27*T1 + 8*T2;
+
+end;

@@ -1,0 +1,16 @@
+set TABLETTAK;
+
+param ar{TABLETTAK};
+param hatasfok{TABLETTAK};
+param adagolas_limit;
+
+var adagolas{TABLETTAK}>=0 integer;
+
+s.t. kettes_szint: sum{t in TABLETTAK} adagolas[t] * hatasfok[t] >= 51;
+s.t. tuladagolas: sum{t in TABLETTAK} adagolas[t] <= adagolas_limit;
+s.t. arany_1: adagolas['Spenotos'] = adagolas['Epres'];
+s.t. arany_2: adagolas['Spenotos'] = adagolas['Kiwis'];
+
+minimize Kiadas: sum{t in TABLETTAK} adagolas[t] * ar[t];
+
+end;

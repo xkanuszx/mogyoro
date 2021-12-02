@@ -1,0 +1,10 @@
+var Alma >=0, integer;
+var Citrom >=0, integer;
+
+s.t. C: 100*Alma + 300*Citrom >= 500;
+s.t. F: 0.5*Alma + 0.2*Citrom >= 1.2;
+s.t. Kcal: 80*Alma + 50*Citrom <= 400;
+
+minimize kiadas: (400*Alma + 600*Citrom) * 0.1;
+
+end;

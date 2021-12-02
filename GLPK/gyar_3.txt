@@ -1,0 +1,11 @@
+var T1 >= 0 ,integer;
+var T2 >= 0 ,integer;
+var T3 >= 0 ,integer;
+
+s.t. eszterga: 2*T1 + 1*T2 + 1*T3 <= 80;
+s.t. marogep: 2*T1 + 1*T2 + 1*T3 <= 70;
+s.t. bevetel: 3*T1 + 1*T2 + 2*T3 >= 100;
+
+minimize anyagkoltseg: 0.8*T1 + 0.2*T2 + 0.5*T3;
+
+end;

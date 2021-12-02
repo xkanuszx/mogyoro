@@ -1,0 +1,16 @@
+set Gyarak;
+set Boltok;
+
+param GyarakTermeles {Gyarak};
+param BoltokFogyasztas {Boltok};
+param Koltsegek{Gyarak, Boltok};
+
+var x{Gyarak, Boltok} >= 0;
+
+s.t. gyar{i in Gyarak}: sum{j in Boltok} x[i,j] = GyarakTermeles[i];
+s.t. bolt{j in Boltok}: sum{i in Gyarak} x[i,j] = BoltokFogyasztas[j];
+
+minimize OsszKoltseg: sum{i in Gyarak} sum{j in Boltok} Koltsegek[i,j] * x[i,j];
+end;
+
+

@@ -1,0 +1,12 @@
+set Eszkozok;
+param Suly{Eszkozok};
+param Ertek{Eszkozok};
+param MaxSuly;
+
+var x{Eszkozok} binary;
+
+s.t. korlat: sum{i in Eszkozok} Suly[i] * x[i] <= MaxSuly;
+
+maximize maxErtek: sum{i in Eszkozok} Ertek[i] * x[i];
+
+end;

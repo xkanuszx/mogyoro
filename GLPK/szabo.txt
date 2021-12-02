@@ -1,0 +1,10 @@
+var ing >= 0, integer;
+var szoknya >= 0, integer;
+
+s.t. munkaido: 5*ing + 2*szoknya <= 10;
+s.t. anyagfelh: 3*ing + 4*szoknya <= 12;
+s.t. darabszam: ing + szoknya >= 4;
+
+maximize bevetel: 4*ing + 3*szoknya;
+
+end;

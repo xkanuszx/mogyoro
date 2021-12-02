@@ -1,0 +1,8 @@
+1. Cél fv
+2. melyik negyed?
+3. s.t. -> egyenlőtlenség egyenletre
+4. X: y-t 0-ra -> X metszet
+5. Y: x-t 0-ra -> Y metszet
+6. s.t.-ok alatt/felett
+7. s.t.-ok metszéspontja -> 2 egyenletes egyenletrendszer
+8. corner pointok -> max/min kiválasztása

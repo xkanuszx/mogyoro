@@ -1,0 +1,19 @@
+data;
+
+set Gyarak := Budapest Veszprem Gyor Szekesfehervar;
+set Boltok := Komarom Szeged Debrecen;
+param GyarakTermeles := Budapest 1000
+					    Veszprem 500 
+					    Gyor 600 
+					    Szekesfehervar 400;
+param BoltokFogyasztas := Komarom 1100
+						  Szeged 700
+						  Debrecen 700;
+						  
+param Koltsegek :               Komarom Szeged Debrecen :=
+				Budapest           12      5       5
+				Veszprem           5       4       3
+				Gyor               2       10      12
+				Szekesfehervar     3       6       7;
+				
+end;
